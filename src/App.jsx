@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
@@ -8,21 +8,25 @@ import Footer from './components/Footer';
 import { Toaster } from 'react-hot-toast';
 import ContactUs from './components/ContactUs ';
 
+
 function App() {
+ 
+
   return (
-    <>
-    <div>
-    <NavBar />
-    <Home />
-    <About />
-    <Protfolio />
-    <Experience />
-    <ContactUs />
-    <Footer />
-    </div>
-    <Toaster />
-    </>
+   <>
+      <div>
+        <NavBar />
+        <Home />
+        <About />
+        <Protfolio />
+        <Experience />
+        <ContactUs />
+        <Footer />
+       
+      </div>
+      <Toaster />
+      </>
   );
 }
 
-export default App
+export default App;
