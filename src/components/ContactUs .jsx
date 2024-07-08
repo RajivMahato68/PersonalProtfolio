@@ -4,19 +4,34 @@ import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
 function ContactUs() {
+
   const form = useRef();
-  const { register, handleSubmit, formState: { errors } } = useForm();
+
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+
 
   const onSubmit = async(data) => {
+
     try {
+
       emailjs.sendForm('service_cv6ymqr', 'template_lee6b17', form.current, {
+
         publicKey: 'ImJjDJv-_B3mRtpp_',
+
       });
+
       toast.success("Your message has been sent");
+
+      reset(); // Clear the form fields
+
     } catch (error) {
+
       console.log(error);
+
       toast.error("Something went wrong");
+
     }
+
   }
 
   return (
@@ -39,6 +54,7 @@ function ContactUs() {
                 id='name'
                 name="name"
                 placeholder='Enter Your Name'
+                autocomplete="off"
                 type="text" />
               {errors.name && <span>This field is required</span>}
             </div>
@@ -50,6 +66,7 @@ function ContactUs() {
                 id='email'
                 name='email'
                 placeholder='Enter Your E-mail Address'
+                autocomplete="off"
                 type="text" />
               {errors.email && <span>This field is required</span>}
             </div>
@@ -61,6 +78,7 @@ function ContactUs() {
                 id='message'
                 name='message'
                 placeholder='Enter Your Message'
+                autocomplete="off"
                 type="text" />
               {errors.message && <span>This field is required</span>}
             </div>
