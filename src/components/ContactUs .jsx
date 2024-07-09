@@ -82,7 +82,7 @@ function ContactUs() {
                 type="text" />
               {errors.message && <span>This field is required</span>}
             </div>
-            <button type="submit" className='bg-black text-white rounded-xl px-3 py-2 hover:bg-slate-700 duration-300'>Send</button>
+            <button type="submit" className='bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded'>Send</button>
           </form>
         </div>
       </div>
