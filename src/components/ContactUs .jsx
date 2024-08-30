@@ -14,7 +14,7 @@ function ContactUs() {
 
     try {
 
-      emailjs.sendForm('service_cv6ymqr', 'template_lee6b17', form.current, {
+      emailjs.sendForm('service_k0kk7qp', 'template_lee6b17', form.current, {
 
         publicKey: 'y8ZyxcDUAA7UKV1YM',
 
