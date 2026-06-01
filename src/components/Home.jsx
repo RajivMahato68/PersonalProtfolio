@@ -80,26 +80,26 @@ function Home() {
             <p className="text-sm md:text-md text-justify">
               {showFullText || window.innerWidth >= 768 ? (
                 <span>
-                  Hello I am Rajiv, I am currently a BCA student in my 6th
-                  semester at Patan NIST, Lalitpur. My educational journey has
-                  equipped me with a strong foundation in computer science and
-                  information technology. I have gained proficiency in several
-                  programming languages and technologies, including HTML, CSS,
-                  JavaScript, React, Tailwind CSS, MongoDB, and Next.js. These
-                  skills have allowed me to develop dynamic and responsive web
-                  applications, leveraging modern frameworks and libraries. My
-                  passion for coding and continuous learning drives me to stay
-                  updated with the latest trends and advancements in the tech
-                  industry. I am enthusiastic about building innovative
-                  solutions and contributing to the ever-evolving world of
-                  technology.
+                  Hello, I am Rajiv. I have completed my Bachelor's degree in Computer
+                  Applications (BCA) from Patan NIST, Lalitpur. Throughout my academic
+                  journey, I built a strong foundation in computer science, software
+                  development, and modern web technologies. I have hands-on experience
+                  working with HTML, CSS, JavaScript, React.js, Tailwind CSS, Next.js,
+                  MongoDB, MySQL, and other web development tools. I enjoy creating
+                  responsive, user-friendly, and scalable web applications that solve
+                  real-world problems. Passionate about continuous learning and
+                  innovation, I stay updated with the latest industry trends and best
+                  practices. I am currently seeking opportunities where I can apply my
+                  technical skills, contribute to meaningful projects, and grow as a
+                  Frontend Developer.
                 </span>
               ) : (
                 <span>
-                  Hello I am Rajiv, I am currently a BCA student in my 6th
-                  semester at Patan NIST, Lalitpur. My educational journey has
-                  equipped me with a strong foundation in computer science and
-                  information technology.
+                  Hello, I am Rajiv. I have completed my Bachelor's degree in Computer
+                  Applications (BCA) from Patan NIST, Lalitpur. I have a strong
+                  foundation in web development and hands-on experience with React.js,
+                  Next.js, JavaScript, Tailwind CSS, MongoDB, and modern frontend
+                  technologies.
                   <button
                     className="bg-white hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full md:hidden"
                     onClick={handleShowMore}
